@@ -5,7 +5,7 @@ Esta es una aplicación en nodejs que actualiza un contador basándose en el nú
 - Primero configuré un servidor web usando express
 - Luego creé una conexión de websockets que actualiza un contador en el frontend.
 - Al inicializarse la conexión se realiza una consulta a la API de envia-test para obtener el último número de guías con el estatus "Creado" (status_id = 1).
-- Añadí un botón para crear una guía nueva. Al hacer click en el botón "Create Test" se envía un evento vía websocket al backend que realiza una llamada a la API para crear una guía nueva usando los datos de prueba del archivo `guia_data.json`.
+- Añadí un botón para crear una guía nueva. Al hacer click en el botón "Create Test" se envía un evento vía websocket al backend que realiza una llamada a la API para crear una guía nueva usando los datos de prueba del archivo `guide_data.json`.
 - Una vez que se crea la guía nueva se realiza otra llamada a la API para obtener el valor actualizado del número de guías con el estatus "Creado" y se actualiza el contador con un websocket.
 - Agregué una ruta GET que recibe un webhook de Envia cuando actualiza el estatus de una guía.
 
