@@ -1,5 +1,7 @@
 # Prueba Backend Envia.com
 
+![Envia Test](./cover.jpg)
+
 Esta es una aplicación en nodejs que actualiza un contador basándose en el número de guías con el estatus "Creada" usando websockets.
 
 - Primero configuré un servidor web usando express
