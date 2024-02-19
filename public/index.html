@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Envia Test</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>EnviaYa</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
     </head>
     <body>
-       <h1>Envia Test</h1>
+        <div class="container">
+            <h1>Created Guides</h1>
+            <div class="counter">Counter: <span id="count">0</span></div>
+            <button id="create-test-button">Create Test</button>
+        </div>
+
+        <script charset="utf-8">
+            const socket = io("https://"+window.location.host);
+
+            socket.on("connect", () => {
+                console.log("Connected");
+            });
+
+            const counter = document.getElementById("count");
+            const button = document.getElementById("create-test-button");
+
+            button.addEventListener("click", () => {
+                socket.emit("createtestguide");
+            });
+
+            socket.on("guidesupdate", (count) => {
+                counter.textContent = count;
+            });
+        </script>
     </body>
 </html>
