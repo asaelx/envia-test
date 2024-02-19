@@ -15,6 +15,7 @@ Esta es una aplicación en nodejs que actualiza un contador basándose en el nú
 
 - Agregué un nuevo hook en mi panel de pruebas, al darle click en probar conexión recibía correctamente la petición GET en mi aplicación, sin embargo al crear una guía nunca pude recibir una petición del webhook para poder obtener la nueva guía creada.
 - Quise utilizar los datos de prueba de la documentación pero me daba un error en el servicio del carrier usando fedex. Probé varios y me funcionó cambiarlo a DHL Express.
+- En el panel de pruebas de envia al tratar de editar, eliminar o probar los webhooks me salían errores y no me permitía realizar operaciones como eliminar viejos webhooks.
 - Agregué un archivo .env en donde guardé los datos sensibles como el ACCESS TOKEN y las urls de la api, etc.
 - Agregué comentarios simples en partes del código y `console.log()` para ser explícito mientras desarrollo. Para una aplicación en producción removería muchos comentarios redudantes y todos los `console.log()`.
 
