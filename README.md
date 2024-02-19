@@ -31,7 +31,7 @@ Subí un demo de la aplicación en la siguiente URL: [https://envia-test.onrende
 
 1. Clonar el repositorio.
 2. Crear un archivo .env con las siguientes variables que pongo aquí por fines demostrativos:
-Reemplazar `<token>`por un acces token.
+Reemplazar `<token>` por un access token.
 ```
 API_URI=https://api-test.envia.com/
 QUERIES_URI=https://queries-test.envia.com/
